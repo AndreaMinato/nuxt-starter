@@ -1,13 +1,17 @@
 {
   "name": "nuxt-app",
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky",
+    "precommit:format": "lint-staged"
   },
   "dependencies": {
     "@nuxt/eslint": "^0.5.5",
@@ -15,6 +19,15 @@
     "vue": "latest"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^3.2.0",
+    "eslint": "^9.9.1",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.10",
     "typescript": "^5.5.4"
+  },
+  "lint-staged": {
+    "*.{json,js,ts,jsx,vue,html}": [
+      "eslint --fix"
+    ]
   }
 }
