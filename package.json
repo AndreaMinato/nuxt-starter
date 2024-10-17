@@ -15,6 +15,8 @@
   },
   "dependencies": {
     "@nuxt/eslint": "^0.5.7",
+    "@vueuse/core": "^11.1.0",
+    "@vueuse/nuxt": "^11.1.0",
     "nuxt": "^3.13.2",
     "vue": "latest"
   },
