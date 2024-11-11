@@ -2,7 +2,7 @@
   "name": "nuxt-app",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.12.2",
+  "packageManager": "pnpm@9.12.3",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -15,16 +15,16 @@
     "precommit:format": "lint-staged"
   },
   "dependencies": {
-    "@nuxt/eslint": "^0.6.0",
-    "@pinia/nuxt": "^0.5.5",
-    "@vueuse/core": "^11.1.0",
-    "@vueuse/nuxt": "^11.1.0",
-    "nuxt": "^3.13.2",
+    "@nuxt/eslint": "^0.6.1",
+    "@pinia/nuxt": "^0.7.0",
+    "@vueuse/core": "^11.2.0",
+    "@vueuse/nuxt": "^11.2.0",
+    "nuxt": "^3.14.159",
     "vue": "latest"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.8.0",
-    "eslint": "^9.13.0",
+    "eslint": "^9.14.0",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "typescript": "^5.6.3"
